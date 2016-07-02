@@ -3,17 +3,17 @@ resources:
 - name: source-code
   type: git
   source:
-    uri: https://github.com/patrickcrocker/concourse-maven-cf-simple.git
+    uri: https://github.com/mjeffries-pivotal/concourse-maven-cf-simple.git
     branch: master
 
 - name: cf
   type: cf
   source:
-    api: api.local.pcfdev.io
-    username: admin
-    password: admin
-    organization: pcfdev-org
-    space: pcfdev-space
+    api: api.system.foundation-20.edu.pcfdemo.com
+    username: concourse
+    password: concourse
+    organization: Pivotal
+    space: development
     skip_cert_check: true
 
 jobs:
